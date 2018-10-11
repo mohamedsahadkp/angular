@@ -1,3 +1,4 @@
+import { CoursesService } from './courses.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -14,9 +15,12 @@ import { Component } from '@angular/core';
 
 export class CoursesComponent {
   title = "My Course";
-  courses = ["Course1", "Course2", "Course3"];
+  courses = [];
 
-  getDescription = () => {
-     return "my course description"
+  constructor(courseService: CoursesService) {
+    this.courses = courseService.getCourses();
   }
+  
+
+
 }

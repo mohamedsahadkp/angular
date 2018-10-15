@@ -21,6 +21,7 @@ export class CoursesComponent {
     this.courses = courseService.getCourses();
   }
   
-
-
+  getDescription() {
+    return "My Description";
+  }
 }

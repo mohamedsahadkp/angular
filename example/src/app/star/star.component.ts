@@ -11,6 +11,7 @@ export class StarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
   onClick() {

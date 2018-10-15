@@ -1,6 +1,13 @@
-<span 
-class="glyphicon"
-[class.glyphicon-star]= "isFavorite"
-[class.glyphicon-star-empty] = "!isFavorite"
-(click) ="onClick()"
-></span>
+<div>
+    <span 
+    class="glyphicon"
+    [class.glyphicon-star]= "isFavorite"
+    [class.glyphicon-star-empty] = "!isFavorite"
+    (click) ="onClick()"
+    ></span>
+</div>
+
+<div>
+    <input type = "text" [(ngModel)]="userText" />
+    <p> {{ userText | star }} </p>
+</div>

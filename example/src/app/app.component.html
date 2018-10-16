@@ -1,5 +1,5 @@
  <h1>
-    Welcome to {{ title }}!
+    Welcome to {{ data.title }}!
 </h1>
 <course> </course>
-<app-star></app-star>
+<app-star [isFavorite]="data.isFavorite" (change) = "onFavoriteChange()"></app-star>

@@ -11,7 +11,7 @@ export class StarPipe implements PipeTransform {
         for (let i = 0; i < words.length ; i++) {
             let word = words[i];
             if(this.isPreposition(word)) {
-                words[i] = word.toLowerCase();
+                words[i] = word;
             } else {
                 words[i] = this.toTitleCase(word);
             }

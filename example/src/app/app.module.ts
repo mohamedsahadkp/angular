@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { StarComponent } from './star/star.component';
 import { StarPipe } from './star/star.pipe';
+import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { StarPipe } from './star/star.pipe';
     CourseComponent,
     StarComponent,
     StarPipe,
+    BootstrapPanelComponent,
   ],
   imports: [
     BrowserModule,

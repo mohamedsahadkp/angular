@@ -1,2 +1,10 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+.userText {
+    color: red;
+}
+.glyphicon-star-empty {
+    color: red;
+}
 
+.glyphicon-star {
+    color: green;
+}

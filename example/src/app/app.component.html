@@ -2,4 +2,4 @@
     Welcome to {{ data.title }}!
 </h1>
 <course> </course>
-<app-star [isFavorite]="data.isFavorite" (change) = "onFavoriteChange()"></app-star>
+<app-star [isFavorite]="data.isFavorite" (change) = "onFavoriteChange($event)"></app-star>

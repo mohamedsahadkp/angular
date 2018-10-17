@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class StarComponent implements OnInit {
   @Input('isFavorite') isSeleted: boolean;
-  @Output() change = new EventEmitter();
+  @Output('change') click = new EventEmitter();
   
   constructor() { }
 
@@ -17,7 +17,11 @@ export class StarComponent implements OnInit {
 
   onClick() {
     this.isSeleted = !this.isSeleted;
-    this.change.emit();
+    this.click.emit({ newObject : this.isSeleted });
   }
+}
 
+export interface FavoriteChangedEventArgs {
+  newObject1: boolean;
+  newObject2: string;
 }
